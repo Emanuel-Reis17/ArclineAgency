@@ -1,0 +1,133 @@
+@media screen and (max-width: 1024px) {
+    .hero__title {
+        font-size: 3.4em;
+        letter-spacing: -1px;
+        line-height: 50px;
+    }
+
+    .hero__text,
+    .hero__text>span {
+        font-size: 0.9em;
+        max-width: 700px;
+    }
+
+    .apps__text:last-child {
+        width: 450px;
+        margin: auto;
+    }
+
+    .services__container,
+    .results__banner,
+    .metrics__banner,
+    .testimonials__banner,
+    .cta__banner, 
+    .apps__banner {
+        padding: 40px;
+    }
+
+    .services {
+        padding: 0;
+    }
+
+    .testimonials__card {
+        width: 300px;
+    }
+
+    .testimonials__card-group>.testimonials__card-text {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .apps__card {
+        width: 300px;
+    }
+
+    .apps__card-text {
+        font-size: 0.85em;
+    } 
+
+    .testimonials__banner {
+        padding: 40px 70px;
+    }
+
+    .cta__title {
+        font-size: 2.5em !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .hero {
+        align-items: start;
+        padding: 40px;
+    }
+
+    .title, 
+    .hero__title {
+        text-align: left !important;
+        font-size: 2em !important;
+        line-height: normal;
+    }
+
+    .text, 
+    .hero__text {
+        text-align: left !important;
+    }
+
+    .apps__cards, 
+    .matrics__cards, 
+    .results__cards, 
+    .services__cards {
+        justify-content: start;
+    }
+
+    .results__cards {
+        gap: 29px;
+    }
+
+    .results__card {
+        align-items: start;
+    }
+
+    .testimonials__banner, 
+    .cta {
+        padding: 40px;
+    }
+
+    .cta__banner {
+        padding: 0;
+    }
+
+    /* .hero__title {
+        font-size: 3.4em;
+        letter-spacing: -1px;
+        line-height: 50px;
+    }
+
+    .hero__text,
+    .hero__text>span {
+        font-size: 0.9em;
+        max-width: 700px;
+    }
+
+    .apps__text:last-child {
+        width: 450px;
+        margin: auto;
+    }
+
+    .services,
+    .results,
+    .metrics,
+    .testimonials,
+    .cta {
+        padding: 40px;
+    }
+
+    .testimonials__card {
+        width: 300px;
+    }
+
+    .testimonials__card-group>.testimonials__card-text {
+        font-size: 0.7em;
+    } */
+}

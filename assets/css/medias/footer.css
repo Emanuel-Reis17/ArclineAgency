@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+    .infor__txt {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .infor__txt {
+        font-size: 0.7em;
+    }
+}

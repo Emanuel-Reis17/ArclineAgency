@@ -1,0 +1,30 @@
+.footer {
+    background-color: var(--black5);
+    width: 100%;
+    padding: 20px;
+}
+
+.infor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.infor__txt {
+    color: var(--white3);
+    font: normal 400 1em var(--font1);
+}
+
+.infor__link {
+    color: var(--white3);
+    font: normal 400 1em var(--font1);
+    text-decoration: underline;
+}
+
+.infor__link > span {
+    color: var(--white3);
+    font-size: 1em;
+}
+

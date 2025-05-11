@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="assets/css/index.css" type="text/css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Arcline | Agência Digital</title>
+</head>
+<body>
+    <dialog class="modal__contact">
+        <button type="button" class="modal__close">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="contact">
+            <h1 class="title contact__title">Tem um projeto<br> em mente?</h1>
+            <p class="text contact__text">Vamos torná-lo real</p>
+            <form class="contact__form" action="#" autocomplete="on">
+                <div class="contact__form-group">
+                    <label for="nome" class="label contact__label">Nome:</label>
+                    <input type="text" name="nome" id="nome" class="text-field contact__text-field" placeholder="Nome">
+                </div>
+                <div class="contact__form-group">
+                    <label for="email" class="label contact__label">Email:</label>
+                    <input type="text" name="email" id="email" class="text-field contact__text-field" placeholder="Email">
+                </div>
+                <div class="contact__form-group">
+                    <label for="número" class="label contact__label">Número:</label>
+                    <input type="text" name="número" id="número" class="text-field contact__text-field" placeholder="(DDD) 99999-9999">
+                </div>
+                <div class="contact__form-group">
+                    <label for="servicos" class="label contact__label">Serviços:</label>
+                    <select class="text-field contact__text-field" name="servicos" id="servicos">
+                        <option value="" selected disabled>Selecione o serviço</option>
+                    </select>
+                </div>
+                <div class="contact__form-group">
+                    <label for="descricao" class="label contact__label">Descrição:</label>
+                    <textarea class="text-field contact__text-field contact__textarea" name="servico" id="descricao" placeholder="Descrição (Opcional)"></textarea>
+                </div>
+                <button type="button" class="contact__btn">Enviar</button>
+            </form>
+        </div>
+    </dialog>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__part">
+                <img src="assets/images/arcline-logo.png" alt="Logo" class="logo">
+                <ul class="nav__menu">
+                    <li class="nav__option">
+                        <a href="#" class="nav__link" target="_self">Home</a>
+                    </li>
+                    <li class="nav__option">
+                        <a href="#services" class="nav__link" target="_self">Serviços</a>
+                    </li>
+                    <li class="nav__option">
+                        <a href="#" class="nav__link" target="_self">Softwares</a>
+                    </li>
+                    <li class="nav__option">
+                        <a href="#" class="nav__link" target="_self">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+            <span class="material-symbols-outlined nav__icon">menu</span>
+            <button class="contact-btn js-contact-btn">Fale conosco</button>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="container hero__banner">
+            <div class="content hero">
+                <h1 class="hero__title">Construindo pontes entre<br> ideias e resultados</h1>
+                <p class="hero__text">Unimos criatividade e tecnologia para transformar visões em soluções digitais de <span>alto impacto</span>. <br>Atuando como ponte entre o que você imagina e o que sua marca precisa alcançar, conectando seu negócio ao futuro.</p>
+                <button type="button" class="hero__btn js-contact-btn">Fale conosco</button>
+            </div>
+        </section>
+        <section class="container results__banner">
+            <div class="content results">
+                <h1 class="results__title title">Os números não metem</h1>
+                <p class="results__text text">Utilizamos métodos profissinais validados no mercado para gerar resultados que o seu negócio</p>
+                <div class="results__cards">
+                    <div class="results__card">
+                        <h1 class="results__card__title">+250 projetos</h1>
+                        <p class="results__card__text">realizados de alta conversão</p>
+                    </div>
+                    <div class="results__card">
+                        <h1 class="results__card__title">+150 clientes</h1>
+                        <p class="results__card__text">baseados em confiança e excelência</p>
+                    </div>
+                    <div class="results__card">
+                        <h1 class="results__card__title">+R$1 milhão</h1>
+                        <p class="results__card__text">em receita gerada para clientes</p>
+                    </div>
+                    <div class="results__card">
+                        <h1 class="results__card__title">+60 marcas</h1>
+                        <p class="results__card__text">lançadas do zero, do conceito à execução</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container services__container" id="services">
+            <div class="content services">
+                <h1 class="title">Nossas Soluções</h1>
+                <p class="text">Na Arcline, oferecemos soluções digitais completas para impulsionar sua marca. <br>Atuamos com estratégia, criatividade e tecnologia para entregar resultados reais.</p>
+                <div class="services__cards">
+                </div>
+            </div>
+        </section>
+        <section class="container metrics__banner">
+            <div class="content metrics">
+                <h1 class="title metrics__title">Não trabalhe com dúvidas,<br> use métodos <em>validados</em></h1>
+                <p class="text metrics__text">Resultados consistentes não vêm do acaso. Aplicamos estratégias testadas <br>e dados concretos para transformar incertezas em decisões seguras e resultados mensuráveis.</p>
+                <div class="metrics__cards">
+                    <div class="metrics__card">
+                        <span class="material-symbols-outlined metrics__card__icon">trending_up</span>
+                        <h1 class="metrics__card__title">Engajamento</h1>
+                        <p class="metrics__card__text">Campanhas e conteúdos que despertam desejo</p>
+                    </div>
+                    <div class="metrics__card">
+                        <span class="material-symbols-outlined metrics__card__icon">analytics</span>
+                        <h1 class="metrics__card__title">Conversão</h1>
+                        <p class="metrics__card__text">Com a estratégia certa, o lead certo vira cliente — e rápido</p>
+                    </div>
+                    <div class="metrics__card">
+                        <span class="material-symbols-outlined metrics__card__icon">monitoring</span>
+                        <h1 class="metrics__card__title">Escala</h1>
+                        <p class="metrics__card__text">Otimizações constantes para que seu faturamento cresça mês após mês</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container apps__banner">
+            <div class="content apps">
+                <h1 class="title apps__title">Pare de reinventar a roda</h1>
+                <p class="text apps__text">Enquanto outros ainda gastam tempo com processos manuais e plataformas engessadas,<br> você pode operar com inteligência. Chega de adaptar seu negócio à tecnologia dos outros.</p>
+                <div class="apps__cards">
+                    <div class="apps__card">
+                        <h3 class="apps__card-title">Zentimer Pro</h3>
+                        <p class="apps__card-text">Um app de produtividade que te mantêm focado no que realmente importa.</p>
+                        <a href="https://emanuel-reis17.github.io/ZenTimer-Pro/" target="_blank" rel="external" class="apps__card-btn">
+                            <span class="material-symbols-outlined apps__card-icon">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="apps__card">
+                        <h3 class="apps__card-title">MyFinance</h3>
+                        <p class="apps__card-text">Domine suas finanças, ganhe tempo, lucre mais. Evite desperdícios e tome decisões rápidas. Menos horas em planilhas, mais dinheiro no caixa.</p>
+                        <a href="#" target="_self" class="apps__card-btn">
+                            <span class="material-symbols-outlined apps__card-icon">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="apps__card">
+                        <h3 class="apps__card-title">Turnus</h3>
+                        <p class="apps__card-text">Chega de folhas manuais, atrasos e confusão. Seu time no horário. Sua gestão no controle.</p>
+                        <a href="#" target="_self" class="apps__card-btn">
+                            <span class="material-symbols-outlined apps__card-icon">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="apps__card">
+                        <h3 class="apps__card-title">Vendora</h3>
+                        <p class="apps__card-text">Crie, publique, e venda em minutos. Simples assim.</p>
+                        <a href="#" target="_self" class="apps__card-btn">
+                            <span class="material-symbols-outlined apps__card-icon">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- <p class="text apps__text">Chegou a hora de ter um sistema que se adapta a você, impulsiona sua performance e transforma cada clique em lucro.</p> -->
+            </div>
+        </section>
+        <section class="container">
+            <div class="content"></div>
+        </section>
+        <section class="container">
+            <div class="content"></div>
+        </section>
+        <section class="container testimonials__banner">
+            <div class="content testimonials">
+                <h1 class="title testimonials__title">Resultados falam mais <br>alto que <em>promessas</em></h1>
+                <p class="text testimonials__text">Enquanto muitos ainda vivem de discursos bonitos, nossos clientes colhem resultados reais. <br>Seus concorrentes vão lamentar não ter chegado primeiro.</p>
+                <div class="testimonials__cards">
+                    <div class="testimonials__card">
+                        <div class="testimonials__card-client">
+                            <span class="material-symbols-outlined">person</span>
+                            <div class="testimonials__card-group">
+                                <h5 class="testimonials__card-title">Carla Menezes</h5>
+                                <p class="testimonials__card-text">Fundadora da CM Estratégias Digitais</p>
+                            </div>
+                        </div>
+                        <p class="testimonials__card-text">A equipe simplesmente destravou um nível de profissionalismo que eu nem sabia que meu negócio podia alcançar. Em duas semanas, minha operação parecia outra.</p>
+                    </div>
+                    <div class="testimonials__card">
+                        <div class="testimonials__card-client">
+                            <span class="material-symbols-outlined">person</span>
+                            <div class="testimonials__card-group">
+                                <h5 class="testimonials__card-title">Lucas Rocha</h5>
+                                <p class="testimonials__card-text">Especialista em Vendas Online</p>
+                            </div>
+                        </div>
+                        <p class="testimonials__card-text">Nunca vi tanta clareza e agilidade num projeto. O site ficou pronto antes do prazo e vende mais no automático do que eu vendia com esforço diário.</p>
+                    </div>
+                    <div class="testimonials__card">
+                        <div class="testimonials__card-client">
+                            <span class="material-symbols-outlined">person</span>
+                            <div class="testimonials__card-group">
+                                <h5 class="testimonials__card-title">Bruno Tavares</h5>
+                                <p class="testimonials__card-text">CEO da Tavares Consultoria</p>
+                            </div>
+                        </div>
+                        <p class="testimonials__card-text">A diferença entre antes e depois da agência é absurda. Hoje eu tenho previsibilidade, autoridade e liberdade. Só me arrependo de não ter contratado antes.</p>
+                    </div>
+                    <div class="testimonials__card">
+                        <div class="testimonials__card-client">
+                            <span class="material-symbols-outlined">person</span>
+                            <div class="testimonials__card-group">
+                                <h5 class="testimonials__card-title">Débora Lima</h5>
+                                <p class="testimonials__card-text">Psicóloga Clínica</p>
+                            </div>
+                        </div>
+                        <p class="testimonials__card-text">Eles não só entenderam meu negócio — eles entenderam meu mercado melhor do que eu. O resultado? Posição no topo e agenda lotada.</p>
+                    </div>
+                    <div class="testimonials__card">
+                        <div class="testimonials__card-client">
+                            <span class="material-symbols-outlined">person</span>
+                            <div class="testimonials__card-group">
+                                <h5 class="testimonials__card-title">Thiago Martins</h5>
+                                <p class="testimonials__card-text">Cofundador da Lumen Arquitetura</p>
+                            </div>
+                        </div>
+                        <p class="testimonials__card-text">Pararam tudo o que não funcionava e colocaram uma estrutura de verdade no ar. Hoje tenho uma operação digital que gera retorno sem eu precisar empurrar nada.</p>
+                    </div>
+                    <div class="testimonials__card">
+                        <div class="testimonials__card-client">
+                            <span class="material-symbols-outlined">person</span>
+                            <div class="testimonials__card-group">
+                                <h5 class="testimonials__card-title">Renata Duarte</h5>
+                                <p class="testimonials__card-text">Mentora de Negócios e Branding</p>
+                            </div>
+                        </div>
+                        <p class="testimonials__card-text">Profissionais de verdade. Não entregaram só design ou automação — entregaram visão de negócio. Isso muda tudo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container cta__banner">
+            <div class="content cta">
+                <h1 class="title cta__title">Você viu o que fizemos por eles. <br>Agora é a <em>sua vez</em>.</h1>
+                <p class="text">Sua empresa não precisa de mais promessas — precisa de execução e resultados. <br>Se você está pronto para crescer de verdade, fale com quem entrega resultado de verdade.</p>
+                <button type="button" class="js-contact-btn cta__btn">Fale conosco</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="infor">
+            <p class="infor__txt"></p>
+            <p class="infor__txt">Developed by: <a href="http://www.github.com/Emanuel-Reis17" class="infor__link" target="_blank" rel="external">Emanuel Reis<span class="material-symbols-outlined">north_east</span></a></p>
+        </div>
+    </footer>
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
