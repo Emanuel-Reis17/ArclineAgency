@@ -1,8 +1,9 @@
 # Arcline | Agência Digital
 
-Website institucional de uma agência digital fictícia chamada Arcline. O site apresenta serviços prestados pela empresa, tais serviços envolvem desenvolvimento web, design e marketing digital.  
+Website institucional de uma agência digital fictícia chamada Arcline. O site apresenta serviços prestados pela empresa, tais serviços envolvem desenvolvimento web, design e marketing digital.
 
-**Propósito:** Desenvolver um projeto mais detalhado mais próximo da realidade.
+**Propósito:** Desenvolver um projeto próximo da realidade.
+**Prazo:** 10/05
 
 ## 🔗 Link de Acesso
 
@@ -21,9 +22,6 @@ Este projeto foi desenvolvido com as seguintes tecnologias (bem simples):
 ```plaintext
 Arcline-Agency
     |- index.html
-    |- contato.html
-    |- desenvolvimento.html
-    |- trafego.html
     |- assets/
         |- css/
         |- js/
@@ -62,13 +60,13 @@ A página está otimizada para os principais dispositivos e tamanhos de tela, in
 
 ## ✨ Melhorias Futuras
 
-- [Describe possible updates]
+- Animações em CSS
+- Páginas para cada serviço
+- Imagens no site
 
-## Inspirações
-- Xmonkey: https://xmonkey.com.br/#home
-- Negócio Local: https://www.agencianegociolocal.com.br
-- Hitmidia: https://agenciahitmidia.com.br
-- Click Interativo: https://www.clickinterativo.com.brk
+## Inspiração
+
+- Revolut: https://www.revolut.com
 
 Desenvolvido por **Emanuel Reis**
 [emanuelemreis@gmai.com](mailto:emanuelemreis@gmai.com) | @Emanuel-Reis17
