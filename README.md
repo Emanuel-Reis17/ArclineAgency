@@ -3,7 +3,6 @@
 Website institucional de uma agência digital fictícia chamada Arcline. O site apresenta serviços prestados pela empresa, tais serviços envolvem desenvolvimento web, design e marketing digital.
 
 **Propósito:** Desenvolver um projeto próximo da realidade.
-**Prazo:** 10/05
 
 ## 🔗 Link de Acesso
 
@@ -11,7 +10,7 @@ Website institucional de uma agência digital fictícia chamada Arcline. O site 
 
 ## 🚀 Tecnologias Utilizadas
 
-Este projeto foi desenvolvido com as seguintes tecnologias (bem simples):
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML
 - CSS
