@@ -5,7 +5,7 @@
 /* Hero Section */
 .hero__banner {
     position: relative;
-    background-image: url('/assets/images/bg-full.jpg');
+    background-image: url('../images/bg-full.jpg');
     background-position: center;
     background-size: cover;
     width: 100%;
