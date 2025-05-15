@@ -4,6 +4,7 @@
     background-color: var(--white1);
     width: 100%;
     border-bottom: var(--border-gray);
+    z-index: 1;
 }
 
 .nav {

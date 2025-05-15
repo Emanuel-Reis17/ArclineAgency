@@ -7,6 +7,7 @@
 @import url('header.css');
 @import url('main.css');
 @import url('footer.css');
+@import url('animations.css');
 
 /* Importing all media queries */
 @import url('medias/header.css');

@@ -4,9 +4,34 @@
 
 /* Hero Section */
 .hero__banner {
-    background-image: linear-gradient(to right, var(--color1), var(--color3), var(--color5));
+    position: relative;
+    background-image: url('/assets/images/bg-full.jpg');
+    background-position: center;
+    background-size: cover;
     width: 100%;
+    height: 100vh;
 }
+
+.blurry {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {   
+    .blurry {
+        position: absolute;
+        display: block;
+        background-image: radial-gradient(closest-side, #42a5f56b, transparent);
+        width: 1000px;
+        height: 1000px;
+    }
+}
+    
+    .hero__blurry {
+        top: -50%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+    }
 
 .hero {
     display: flex;
@@ -14,7 +39,8 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    height: 500px;
+    height: 100%;
+    z-index: 1;
 }
 
 .hero__title {
@@ -84,20 +110,20 @@
     height: 200px;
 }
 
-.services__title, 
+.services__title,
 .apps__card-title {
     color: var(--black3);
     font: normal 600 1.2em var(--font1);
     letter-spacing: -1px;
 }
 
-.services__text, 
+.services__text,
 .apps__card-text {
     color: var(--black1);
     font: normal 400 0.9em var(--font3);
 }
 
-.services__btn, 
+.services__btn,
 .apps__card-btn {
     display: flex;
     background-color: var(--color2);
@@ -107,7 +133,7 @@
     transition: var(--transition-slow);
 }
 
-.services__btn:hover, 
+.services__btn:hover,
 .apps__card-btn:hover {
     background-color: var(--color4);
     transform: scale(0.95);
@@ -153,8 +179,8 @@
 }
 
 /* Metrics Section */
-.metrics__title>em, 
-.testimonials__title>em, 
+.metrics__title>em,
+.testimonials__title>em,
 .cta__title>em {
     background: linear-gradient(90deg, var(--color1), #a813e5);
     -webkit-background-clip: text;
@@ -243,7 +269,7 @@
     margin-bottom: 19px;
 }
 
-.contact__text  {
+.contact__text {
     color: var(--color1) !important;
 }
 
@@ -317,7 +343,7 @@
 
 .testimonials__title {
     text-align: left !important;
-    color: var(--white1) !important; 
+    color: var(--white1) !important;
 }
 
 .testimonials__text {
@@ -400,4 +426,25 @@
 .cta__btn:hover {
     box-shadow: var(--sky-blue-shadow);
     transform: scale(0.90);
+}
+
+@media screen and (min-width: 425px) { 
+    .hero__title,   
+    .results__title,
+    .metrics__title,
+    .services_title,
+    .apps__title,
+    .cta__title,
+    .testimonials__title,
+    .hero__text, 
+    .results__text, 
+    .services_text, 
+    .metrics__text, 
+    .apps__text, 
+    .testimonials__text,
+    .hero__btn {
+        opacity: 0;
+        transform: translateY(-30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
 }
