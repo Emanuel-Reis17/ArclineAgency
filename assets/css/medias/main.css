@@ -1,6 +1,6 @@
 @media screen and (max-width: 1024px) {
     .hero__banner {
-        background-image: url('/assets/images/bg-768px.jpg');
+        background-image: url('../../images/bg-768px.jpg');
     }
 
     .hero__title {
@@ -62,7 +62,7 @@
 
 @media screen and (max-width: 425px) {
     .hero__banner {
-        background-image: url('/assets/images/bg-425px-full.jpg');
+        background-image: url('../../images/bg-425px-full.jpg');
     }
 
     .hero {

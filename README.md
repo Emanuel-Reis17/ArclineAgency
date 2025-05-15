@@ -59,9 +59,7 @@ A página está otimizada para os principais dispositivos e tamanhos de tela, in
 
 ## ✨ Melhorias Futuras
 
-- Animações em CSS
 - Páginas para cada serviço
-- Imagens no site
 
 ## Inspiração
 
