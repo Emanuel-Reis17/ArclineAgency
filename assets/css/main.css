@@ -224,7 +224,8 @@
 }
 
 /* Modal */
-.modal__contact {
+.modal__contact, 
+.alert__popup {
     position: fixed;
     background-color: var(--black4);
     width: 500px;
@@ -236,7 +237,20 @@
     box-shadow: var(--shadow);
 }
 
-.modal__contact::backdrop {
+.alert__popup, 
+.alert__popup .text {
+    text-align: center !important;
+}
+
+.alert__title {
+    color: var(--white1);
+    font: normal 500 2.3em var(--font1);
+    line-height: 34px;
+    margin-bottom: 10px;
+}
+
+.modal__contact::backdrop, 
+.alert__popup::backdrop {
     background-color: #000000cf;
 }
 

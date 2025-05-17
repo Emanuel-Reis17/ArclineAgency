@@ -34,24 +34,78 @@ cards.forEach(card => card.classList.add('block-animation'));
 // Função para mostrar modal de contato
 const modal = document.querySelector('.modal__contact'),
     contact_btn = document.querySelectorAll('.js-contact-btn'),
-    close_btn = document.querySelector('.modal__close');
+    service_btn = document.querySelectorAll('.services__btn');
 
-let isOpen = false;
-const toggleModal = () => {
-    if (isOpen) {
-        modal.close();
-        isOpen = false;
-        document.body.style.overflow = 'auto';
-    } else {
+const toggleModal = cls => {
+    const modal = document.querySelector(cls);
+    return () => {
+        const btn = modal.querySelector('#js-btn-close');
         document.body.style.overflow = 'hidden';
         modal.showModal();
-        isOpen = true;
+        btn.addEventListener('click', () => {
+            modal.close();
+            document.body.style.overflow = 'auto';
+        });
     }
 };
 
+
 // Adicionando função toggleModal aos botões
-contact_btn.forEach(btn => btn.addEventListener('click', toggleModal));
-close_btn.addEventListener('click', toggleModal);
+contact_btn.forEach(btn => btn.addEventListener('click', toggleModal('.modal__contact')));
+
+service_btn.forEach(btn => btn.addEventListener('click', toggleModal('.alert__popup')))
+
+// Simulando envio de dados do form
+const form = document.querySelector('.contact__form');
+
+form.addEventListener('click', async event => {
+    const target = event.target;
+
+    if (target.classList.contains('js-contact-send')) {
+        const btn = target;
+        try {
+            event.preventDefault();
+            btn.innerText = 'Enviando...';
+            const client = handleForm();
+            const response = await sendEmail(client);
+            alert(response.message);
+            form.parentElement.parentElement.querySelector('#js-btn-close').click();
+        } catch (err) {
+            console.error(err.message);
+            alert(err.message);
+        } finally {
+            btn.innerText = 'Enviar';
+        }
+    }
+});
+
+function handleForm() {
+    const client = {};
+    client.name = document.querySelector('#nome').value;
+    client.email = document.querySelector('#email').value;
+    client.number = document.querySelector('#numero').value;
+    client.service = document.querySelector('#servicos').value;
+    client.description = document.querySelector('#descricao').value;
+    return client;
+}
+
+function sendEmail(client) {
+    /* Simulando uma validação no servidor
+       antes de cadastrar os dados no BD */
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            for (let key in client) {
+                if (client[key].trim().length === 0) {
+                    reject({
+                        success: false,
+                        message: `Dado(s) inválido(s)! Error: ${key.toLocaleUpperCase()}`
+                    });
+                }
+            }
+            resolve({ success: true, message: 'Dados enviados com sucesso' });
+        }, 2000);
+    });
+}
 
 // Atualizando a data do site
 const date = new Date();
@@ -59,7 +113,7 @@ document.querySelector('.infor__txt')
     .innerText = `© Arcline Agency ${date.getFullYear()}, Todos os direitos reservados.`;
 
 // Adicionando animação de texto ao scrollar
-const texts_class = ['.hero__text', '.results__text', '.services_text', 
+const texts_class = ['.hero__text', '.results__text', '.services_text',
     '.metrics__text', '.apps__text', '.testimonials__text', '.title'];
 
 document.addEventListener('DOMContentLoaded', () => {
