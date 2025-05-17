@@ -1,6 +1,16 @@
 import { renderServices } from "./services.js";
 import { animateText, setAnimationOnScroll } from "./animations.js";
 
+window.addEventListener('scroll',() => {
+    if (window.scrollY > 100) {
+        document.querySelector('.header').style.top = 0;
+        document.querySelector('.hero__scroll').style.opacity = 0;
+    } else {
+        document.querySelector('.hero__scroll').style.opacity = 1;
+        document.querySelector('.header').style.top = '-70px';
+    }
+});
+
 const menu = document.querySelector('.nav__menu'),
     menu_btn = document.querySelector('.nav__icon'),
     nav_links = document.querySelectorAll('.nav__option');

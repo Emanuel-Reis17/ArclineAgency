@@ -12,6 +12,25 @@
     height: 100vh;
 }
 
+.hero__scroll {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    display: flex;
+    gap: 5px;
+    color: var(--white5);
+    font: normal 500 1em var(--font1);
+    background-color: var(--black3);
+    padding: 11px 19px;
+    border-radius: 30px;
+    transform: translateX(-50%);
+    transition: var(--transition-slow);
+}
+
+.hero__scroll span {
+    font-size: 20px;
+}
+
 .blurry {
     display: none;
 }
@@ -26,12 +45,12 @@
     }
 }
     
-    .hero__blurry {
-        top: -50%;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 0;
-    }
+.hero__blurry {
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
 
 .hero {
     display: flex;
