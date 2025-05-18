@@ -1,7 +1,7 @@
 import { renderServices } from "./services.js";
 import { animateText, setAnimationOnScroll } from "./animations.js";
 
-window.addEventListener('scroll',() => {
+window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
         document.querySelector('.header').style.top = 0;
         document.querySelector('.hero__scroll').style.opacity = 0;
@@ -42,19 +42,31 @@ const cards = Array.from(document.querySelectorAll('[class]'))
 cards.forEach(card => card.classList.add('block-animation'));
 
 // Função para mostrar modal de contato
-const modal = document.querySelector('.modal__contact'),
-    contact_btn = document.querySelectorAll('.js-contact-btn'),
-    service_btn = document.querySelectorAll('.services__btn');
+const contact_btn = document.querySelectorAll('.js-contact-btn'),
+    service_btn = document.querySelectorAll('.services__btn'),
+    apps_btn = document.querySelectorAll('.js-apps-btn');
 
 const toggleModal = cls => {
     const modal = document.querySelector(cls);
     return () => {
+        modal.classList.remove('hide');
+        modal.classList.add('show');
+
         const btn = modal.querySelector('#js-btn-close');
         document.body.style.overflow = 'hidden';
         modal.showModal();
+
         btn.addEventListener('click', () => {
-            modal.close();
-            document.body.style.overflow = 'auto';
+            modal.classList.remove('show');
+            modal.classList.add('hide');
+
+            modal.addEventListener('animationend', function handler() {
+                document.body.style.overflow = 'auto';
+                modal.classList.remove('hide');
+                modal.style.opacity = 0;
+                modal.removeEventListener('animationend', handler);
+                modal.close();
+            });
         });
     }
 };
@@ -64,6 +76,8 @@ const toggleModal = cls => {
 contact_btn.forEach(btn => btn.addEventListener('click', toggleModal('.modal__contact')));
 
 service_btn.forEach(btn => btn.addEventListener('click', toggleModal('.alert__popup')))
+
+apps_btn.forEach(btn => btn.addEventListener('click', toggleModal('.alert__popup')))
 
 // Simulando envio de dados do form
 const form = document.querySelector('.contact__form');

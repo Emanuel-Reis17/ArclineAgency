@@ -246,6 +246,7 @@
 .modal__contact, 
 .alert__popup {
     position: fixed;
+    opacity: 0;
     background-color: var(--black4);
     width: 500px;
     border-radius: 19px;
@@ -254,6 +255,7 @@
     border: none;
     outline: none;
     box-shadow: var(--shadow);
+    transition: opacity 0.4s ease;
 }
 
 .alert__popup, 

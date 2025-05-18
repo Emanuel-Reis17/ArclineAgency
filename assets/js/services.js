@@ -32,7 +32,7 @@ export function renderServices() {
             <div class="services__card">
                 <h2 class="services__title">${item.name}</h2>
                 <p class="services__text">${item.description}</p>
-                <a href="javascript:void()" class="services__btn" target="_self"><span class="material-symbols-outlined">arrow_forward</span></a>
+                <a href="javascript:void(0)" class="services__btn" target="_self"><span class="material-symbols-outlined">arrow_forward</span></a>
             </div>
         `;
     });
